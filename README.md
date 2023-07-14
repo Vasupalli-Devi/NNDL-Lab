@@ -1,2 +1,2 @@
-# NNDL-Lab--AND-Gate
+# NNDL-Lab
 Program on AND Gate...
