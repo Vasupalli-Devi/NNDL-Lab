@@ -1,0 +1,17 @@
+OR Gate:
+
+import numpy as np
+X=np.asarray([[0,0],[0,1],[1,0],[1,1]])
+y=np.asarray([0,0,0,1])
+y_pred=np.asarray([0,0,0,0])
+weights=np.asarray([1,1])
+threshold=0.5
+for i in range(X.shape[0]):
+  x=X[i]
+  w=np.dot(x,weights)
+  if w >= threshold:
+    y_pred[i]=1
+  else:
+    y_pred[i]=0
+
+print(y_pred)
